@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+button {
+  width: 5rem;
+  height: 5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+svg {
+  fill: gray;
+}
+
+.like {
+  animation: corazon 1s both ease-in;
+  fill: red;
+}
+
+@keyframes corazon {
+  0% {
+    fill: gray;
+  }
+
+  
+  10%{
+    transform: scale(1.5);
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  }
+  40%{
+    transform: scale(1);
+
+  }
+  70%{
+    transform: scale(1.5);
+
+  }
+  100% {
+fill: red;
+transform: scale(1);
+  }
+}
+  
+}
